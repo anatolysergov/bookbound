@@ -4,10 +4,20 @@
     </div>
     <div class="login-container">
         <div class="title">BookBound</div>
-        <form>
-            <input>
-            <input>
-            <button>Login</button>
+        <form class="login-form">
+
+            <mat-form-field class="username-field-container">
+                <mat-label>UserName</mat-label>
+                <input matInput color="primary" placeholder="Ex. Pizza">
+            </mat-form-field>
+
+            <mat-form-field class="password-field-container">
+                <mat-label>Password</mat-label>
+                <input matInput color="primary" type="password" name="password" id="password" placeholder="Password">
+            </mat-form-field>
+
+            <button mat-flat-button color="primary">Login</button>
+            <span class="registered-link">Registered?</span> 
         </form>
     </div>
 </div>
