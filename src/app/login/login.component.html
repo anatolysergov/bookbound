@@ -7,8 +7,8 @@
         <form class="login-form">
 
             <mat-form-field class="username-field-container">
-                <mat-label>UserName</mat-label>
-                <input matInput color="primary" placeholder="Ex. Pizza">
+                <mat-label>Username</mat-label>
+                <input matInput color="primary" placeholder="Username">
             </mat-form-field>
 
             <mat-form-field class="password-field-container">
@@ -16,7 +16,7 @@
                 <input matInput color="primary" type="password" name="password" id="password" placeholder="Password">
             </mat-form-field>
 
-            <button mat-flat-button color="primary">Login</button>
+            <button mat-flat-button color="primary" (click)="login()">Login</button>
             <span class="registered-link">Registered?</span> 
         </form>
     </div>
