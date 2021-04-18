@@ -4,19 +4,33 @@
     </div>
     <div class="login-container">
         <div class="title">BookBound</div>
-        <form class="login-form">
+        <form #loginForm="ngForm" class="login-form" (ngSubmit)="login()" autocomplete="off">
 
             <mat-form-field class="username-field-container">
                 <mat-label>Username</mat-label>
-                <input matInput color="primary" placeholder="Username">
+                <input 
+                    name="username"
+                    [(ngModel)]="model.username"
+                    matInput 
+                    color="primary" 
+                    placeholder="Username"
+                >
             </mat-form-field>
 
             <mat-form-field class="password-field-container">
                 <mat-label>Password</mat-label>
-                <input matInput color="primary" type="password" name="password" id="password" placeholder="Password">
+                <input 
+                    [(ngModel)]="model.password"
+                    matInput 
+                    color="primary" 
+                    type="password" 
+                    name="password" 
+                    id="password" 
+                    placeholder="Password"
+                >
             </mat-form-field>
 
-            <button mat-flat-button color="primary" (click)="login()">Login</button>
+            <button mat-flat-button color="primary" type="submit">Login</button>
             <span class="registered-link">Registered?</span> 
         </form>
     </div>

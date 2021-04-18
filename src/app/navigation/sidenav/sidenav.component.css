@@ -1,5 +1,19 @@
 .sidenav-container {
-    background-color: blue;
     height: 100%;
     width: 18%;
+}
+
+.menu-icon {
+    color: #606060;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.logo-container {
+    display: inline-flex;
+}
+
+.logo-text {
+    margin-top: 22px;
+    margin-left: 10px;
 }
